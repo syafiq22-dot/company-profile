@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalPath Scholarship Agency - Wujudkan Mimpi Kuliah di Luar Negeri</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50">
+
+    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <span class="text-yellow-400">Global</span>Path
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-yellow-400 transition">Home</a>
+                    <a href="#services" class="hover:text-yellow-400 transition">Services</a>
+                    <a href="#success" class="hover:text-yellow-400 transition">Success Stories</a>
+                    <a href="#mentors" class="hover:text-yellow-400 transition">Mentors</a>
+                    <a href="#blog" class="hover:text-yellow-400 transition">Blog</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block py-2 hover:text-yellow-400 transition">Home</a>
+                <a href="#services" class="block py-2 hover:text-yellow-400 transition">Services</a>
+                <a href="#success" class="block py-2 hover:text-yellow-400 transition">Success Stories</a>
+                <a href="#mentors" class="block py-2 hover:text-yellow-400 transition">Mentors</a>
+                <a href="#blog" class="block py-2 hover:text-yellow-400 transition">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1523050335392-93851179ae22?auto=format&fit=crop&q=80&w=1920" 
+                 alt="Students" 
+                 class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-4 text-center text-white reveal">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Wujudkan Mimpi Kuliah di<br>
+                <span class="text-yellow-400">Luar Negeri</span> Bersama Mentor Terbaik
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-200">
+                Pendampingan end-to-end dari persiapan dokumen hingga keberangkatan ke kampus impian
+            </p>
+            <button id="ctaBtn" class="bg-yellow-400 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-500 transform hover:scale-105 transition duration-300 shadow-xl">
+                Konsultasi Gratis <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Layanan Kami</h2>
+                <p class="text-gray-600 text-lg">Solusi lengkap untuk perjalanan beasiswamu</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-slate-50 rounded-2xl p-8 border border-gray-200 reveal">
+                    <div class="bg-yellow-400 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-pen-fancy text-2xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Review Essay</h3>
+                    <p class="text-gray-600 mb-6">Dapatkan feedback mendalam dari mentor berpengalaman untuk essay beasiswamu. Kami membantu menyempurnakan setiap kata agar story-mu shine.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Personal Statement</li>
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Motivation Letter</li>
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Study Plan</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card bg-slate-50 rounded-2xl p-8 border border-gray-200 reveal">
+                    <div class="bg-yellow-400 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-microphone-alt text-2xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Simulasi Interview</h3>
+                    <p class="text-gray-600 mb-6">Latihan interview dengan skenario real dan feedback konstruktif. Tingkatkan kepercayaan dirimu sebelum interview sesungguhnya.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Mock Interview 1-on-1</li>
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Video Analysis</li>
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Tips & Tricks</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card bg-slate-50 rounded-2xl p-8 border border-gray-200 reveal">
+                    <div class="bg-yellow-400 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-book-open text-2xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">IELTS Preparation</h3>
+                    <p class="text-gray-600 mb-6">Program intensif untuk mencapai skor IELTS impianmu. Materi lengkap dengan strategi proven dari mentor bersertifikat.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> All Skills Training</li>
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Practice Tests</li>
+                        <li><i class="fas fa-check text-yellow-400 mr-2"></i> Score Guarantee</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="success" class="py-20 bg-slate-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold mb-4">Success Stories</h2>
+                <p class="text-gray-300 text-lg">Mereka berhasil, kamu juga bisa!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="reveal bg-slate-800 rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=400" 
+                         alt="Awardee" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg mb-1">Sarah Wijaya</h4>
+                        <p class="text-yellow-400 text-sm mb-2">Harvard University</p>
+                        <p class="text-gray-400 text-sm">Fulbright Scholarship 2024</p>
+                    </div>
+                </div>
+                
+                <div class="reveal bg-slate-800 rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" 
+                         alt="Awardee" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg mb-1">Reza Pratama</h4>
+                        <p class="text-yellow-400 text-sm mb-2">Oxford University</p>
+                        <p class="text-gray-400 text-sm">Chevening Scholarship 2024</p>
+                    </div>
+                </div>
+                
+                <div class="reveal bg-slate-800 rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400" 
+                         alt="Awardee" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg mb-1">Dinda Kusuma</h4>
+                        <p class="text-yellow-400 text-sm mb-2">MIT</p>
+                        <p class="text-gray-400 text-sm">LPDP Scholarship 2024</p>
+                    </div>
+                </div>
+                
+                <div class="reveal bg-slate-800 rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" 
+                         alt="Awardee" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg mb-1">Ahmad Fauzi</h4>
+                        <p class="text-yellow-400 text-sm mb-2">Stanford University</p>
+                        <p class="text-gray-400 text-sm">Australia Awards 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mentors" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Meet Our Mentors</h2>
+                <p class="text-gray-600 text-lg">Tim berpengalaman yang siap membimbingmu</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="reveal text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-white text-4xl font-bold">
+                        DR
+                    </div>
+                    <h4 class="font-bold text-xl mb-2">Dr. Rina Sari</h4>
+                    <p class="text-yellow-600 mb-2">Oxford Alumni</p>
+                    <p class="text-gray-600 text-sm">15+ tahun pengalaman dalam scholarship counseling</p>
+                </div>
+                
+                <div class="reveal text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-white text-4xl font-bold">
+                        BA
+                    </div>
+                    <h4 class="font-bold text-xl mb-2">Budi Andika, M.Ed</h4>
+                    <p class="text-yellow-600 mb-2">Harvard Alumni</p>
+                    <p class="text-gray-600 text-sm">Expert dalam IELTS & TOEFL preparation</p>
+                </div>
+                
+                <div class="reveal text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-white text-4xl font-bold">
+                        LM
+                    </div>
+                    <h4 class="font-bold text-xl mb-2">Lisa Maharani, Ph.D</h4>
+                    <p class="text-yellow-600 mb-2">Stanford Alumni</p>
+                    <p class="text-gray-600 text-sm">Specialist dalam essay writing & interview coaching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Latest Blog</h2>
+                <p class="text-gray-600 text-lg">Tips & insights untuk perjalanan beasiswamu</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="reveal bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=400" 
+                         alt="Blog" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-yellow-600 text-sm font-semibold">Tips & Tricks</span>
+                        <h3 class="font-bold text-xl mt-2 mb-3">Kesalahan Fatal yang sering terjadi dalam mengerjakan Essay Beasiswa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Hindari kesalahan umum yang sering membuat aplikasi beasiswa ditolak...</p>
+                        <a href="https://eksam.id/blog/kesalahan-umum-menulis-essay-beasiswa-cek-disini/" target="_blank" class="text-yellow-600 font-semibold hover:text-yellow-700">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                
+                <div class="reveal bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=400" 
+                         alt="Blog" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-yellow-600 text-sm font-semibold">Interview Tips</span>
+                        <h3 class="font-bold text-xl mt-2 mb-3">Bagaimana Cara Menjawab Pertanyaan Sulit saat Interview?</h3>
+                        <p class="text-gray-600 text-sm mb-4">Strategi jitu untuk menghadapi pertanyaan tricky dari interviewer...</p>
+                        <a href="https://www.cakrawala.ac.id/blog/pertanyaan-wawancara-beasiswa" target="_blank" class="text-yellow-600 font-semibold hover:text-yellow-700">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                
+                <div class="reveal bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=400" 
+                         alt="Blog" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-yellow-600 text-sm font-semibold">IELTS Guide</span>
+                        <h3 class="font-bold text-xl mt-2 mb-3">Strategi Mendapat IELTS 7.5+ dalam 3 Bulan</h3>
+                        <p class="text-gray-600 text-sm mb-4">Panduan lengkap dari preparation hingga test day...</p>
+                        <a href="https://www.ultimateducation.co.id/7-rahasia-lulus-ielts-dengan-band-7+dalam-3-bulan/" target="_blank" class="text-yellow-600 font-semibold hover:text-yellow-700">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4"><span class="text-yellow-400">Global</span>Path</h3>
+                    <p class="text-gray-400">Mewujudkan mimpi kuliah di luar negeri bersama mentor terpercaya.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-yellow-400 transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-yellow-400 transition">Services</a></li>
+                        <li><a href="#success" class="hover:text-yellow-400 transition">Success Stories</a></li>
+                        <li><a href="#mentors" class="hover:text-yellow-400 transition">Mentors</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2 text-yellow-400"></i> info@globalpath.com</li>
+                        <li><i class="fas fa-phone mr-2 text-yellow-400"></i> +62 821-2502-6274</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-yellow-400"></i> Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-slate-900 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-slate-900 transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="mailto:info@globalpath.com" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-slate-900 transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/6282125026274" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-slate-900 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 GlobalPath Scholarship Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282125026274" target="_blank" class="fab-whatsapp">
+        <i class="fab fa-whatsapp text-3xl text-white"></i>
+    </a>
+
+    <div id="consultModal" class="modal items-center justify-center">
+        <div class="modal-content bg-white rounded-2xl p-8 max-w-md w-full mx-4 relative">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">Konsultasi Gratis</h3>
+            
+            <form id="consultForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Nama Lengkap</label>
+                    <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">WhatsApp</label>
+                    <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Negara Tujuan</label>
+                    <select id="country" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                        <option value="">Pilih Negara</option>
+                        <option value="USA">Amerika Serikat</option>
+                        <option value="UK">Inggris</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Jepang">Jepang</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="w-full bg-yellow-400 text-slate-900 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">
+                    Kirim Pendaftaran
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
